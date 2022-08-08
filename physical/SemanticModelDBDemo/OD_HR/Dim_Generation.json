@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_Generation",
+    "sourceTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_GENERATION_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

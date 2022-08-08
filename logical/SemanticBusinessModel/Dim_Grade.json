@@ -1,0 +1,101 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Grade",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "GRADE" ],
+    "logicalColumns" : [ {
+      "name" : "CODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Grade.CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    }, {
+      "name" : "GRADE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Grade.GRADE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    }, {
+      "name" : "MIN_SALARY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Grade.MIN_SALARY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    }, {
+      "name" : "MAX_SALARY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Grade.MAX_SALARY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Grade",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SemanticModelDBDemo.OD_HR.Dim_Grade" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Grade Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Grade Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Grade Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "GRADE" ],
+        "displayKey" : "GRADE"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "H1",
+        "levels" : [ "Dim_Grade Total", "Dim_Grade Detail" ]
+      } ]
+    }
+  }
+}

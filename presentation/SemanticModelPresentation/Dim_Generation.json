@@ -1,0 +1,36 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Generation",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Generation.ROW_WID"
+    }, {
+      "name" : "GENERATION_DESC_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Generation.GENERATION_DESC_TX"
+    }, {
+      "name" : "YEAR_START_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Generation.YEAR_START_NR"
+    }, {
+      "name" : "YEAR_END_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Generation.YEAR_END_NR"
+    }, {
+      "name" : "GENERATION_YEARS_DESC_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Generation.GENERATION_YEARS_DESC_TX"
+    }, {
+      "name" : "ORDER_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Generation.ORDER_NR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:SemanticBusinessModel.Dim_Generation",
+      "levels" : [ {
+        "name" : "Dim_GenerationDim Total",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Generation.Dim_GenerationDim Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Generation.Detail",
+        "displayColumn" : "presentationColumn:SemanticModelPresentation.Dim_Generation.GENERATION_DESC_TX"
+      } ]
+    } ]
+  }
+}

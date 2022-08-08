@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Org_Unit",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Org_Unit.ROW_WID"
+    }, {
+      "name" : "PARENT_ORG_UNIT_WID",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Org_Unit.PARENT_ORG_UNIT_WID"
+    }, {
+      "name" : "ORG_UNIT_PATH_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Org_Unit.ORG_UNIT_PATH_TX"
+    }, {
+      "name" : "ORG_UNIT_DESC_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Org_Unit.ORG_UNIT_DESC_TX"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:SemanticBusinessModel.Dim_Org_Unit",
+      "levels" : [ {
+        "name" : "Dim_Org_Unit Total",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Org_Unit.Dim_Org_Unit Total"
+      }, {
+        "name" : "Dim_Org_Unit Detail",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Org_Unit.Dim_Org_Unit Detail",
+        "displayColumn" : "presentationColumn:SemanticModelPresentation.Dim_Org_Unit"
+      } ]
+    } ]
+  }
+}

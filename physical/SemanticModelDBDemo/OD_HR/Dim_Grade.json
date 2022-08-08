@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_Grade",
+    "sourceTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_GRADE_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

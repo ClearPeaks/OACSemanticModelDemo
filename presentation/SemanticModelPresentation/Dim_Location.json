@@ -1,0 +1,54 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Location",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.ROW_WID"
+    }, {
+      "name" : "SITE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.SITE_NAME"
+    }, {
+      "name" : "LATITUDE",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.LATITUDE"
+    }, {
+      "name" : "LONGITUDE",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.LONGITUDE"
+    }, {
+      "name" : "SITE_TYPE_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.SITE_TYPE_TX"
+    }, {
+      "name" : "CAPACITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.CAPACITY_NR"
+    }, {
+      "name" : "ANNUAL_COST_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.ANNUAL_COST_NR"
+    }, {
+      "name" : "ADDRESS_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.ADDRESS_TX"
+    }, {
+      "name" : "COUNTRY_ISO_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.COUNTRY_ISO_TX"
+    }, {
+      "name" : "COUNTRY_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.COUNTRY_TX"
+    }, {
+      "name" : "SITE_PICTURE",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.SITE_PICTURE"
+    }, {
+      "name" : "SALARY_MODIFIER_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Location.SALARY_MODIFIER_NR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:SemanticBusinessModel.Dim_Location",
+      "levels" : [ {
+        "name" : "Dim_Location Total",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Location.Dim_Location Total"
+      }, {
+        "name" : "Dim_Location Detail",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Location.Dim_Location Detail",
+        "displayColumn" : "presentationColumn:SemanticModelPresentation.Dim_Location.SITE_NAME"
+      } ]
+    } ]
+  }
+}

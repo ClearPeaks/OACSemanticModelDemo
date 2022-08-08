@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Grade",
+    "presentationColumns" : [ {
+      "name" : "CODE",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Grade.CODE"
+    }, {
+      "name" : "GRADE",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Grade.GRADE"
+    }, {
+      "name" : "MIN_SALARY",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Grade.MIN_SALARY"
+    }, {
+      "name" : "MAX_SALARY",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Grade.MAX_SALARY"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:SemanticBusinessModel.Dim_Grade",
+      "levels" : [ {
+        "name" : "Dim_Grade Total",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Grade.Dim_Grade Total"
+      }, {
+        "name" : "Dim_Grade Detail",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Grade.Dim_Grade Detail",
+        "displayColumn" : "presentationColumn:SemanticModelPresentation.Dim_Grade.GRADE"
+      } ]
+    } ]
+  }
+}

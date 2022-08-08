@@ -1,0 +1,278 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Date",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "DATENUM" ],
+    "logicalColumns" : [ {
+      "name" : "DATENUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DATENUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DATE_",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DATE_" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "YEARMONTHNUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.YEARMONTHNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CALENDAR_QUARTER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.CALENDAR_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MONTHNUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.MONTHNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MONTHNAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.MONTHNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MONTHSHORTNAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.MONTHSHORTNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WEEKNUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.WEEKNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYNUMOFYEAR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DAYNUMOFYEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYNUMOFMONTH",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DAYNUMOFMONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYNUMOFWEEK",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DAYNUMOFWEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYNAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DAYNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYSHORTNAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DAYSHORTNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "QUARTER",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "YEARQUARTERNUM",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.YEARQUARTERNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYNUMOFQUARTER",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.DAYNUMOFQUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "YEAR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Date.YEAR" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Date",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SemanticModelDBDemo.OD_HR.Dim_Date" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "TIME",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Date Total",
+      "logicalLevels" : [ {
+        "name" : "Dim Date Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "DATENUM" ],
+        "displayKey" : "DATENUM",
+        "chronologicalKey" : [ "DATENUM" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "H1",
+        "levels" : [ "Dim Date Total", "Detail" ]
+      } ]
+    }
+  }
+}

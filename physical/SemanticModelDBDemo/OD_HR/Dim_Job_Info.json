@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_Job_Info",
+    "sourceTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_JOB_INFO_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

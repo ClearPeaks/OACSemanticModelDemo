@@ -1,0 +1,99 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Org_Unit",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "ROW_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Org_Unit.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    }, {
+      "name" : "PARENT_ORG_UNIT_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Org_Unit.PARENT_ORG_UNIT_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    }, {
+      "name" : "ORG_UNIT_PATH_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Org_Unit.ORG_UNIT_PATH_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    }, {
+      "name" : "ORG_UNIT_DESC_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Org_Unit.ORG_UNIT_DESC_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Org_Unit",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SemanticModelDBDemo.OD_HR.Dim_Org_Unit" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Org_Unit Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Org_Unit Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Org_Unit Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "ORG_UNIT_DESC_TX" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "H1",
+        "levels" : [ "Dim_Org_Unit Total", "Dim_Org_Unit Detail" ]
+      } ]
+    }
+  }
+}

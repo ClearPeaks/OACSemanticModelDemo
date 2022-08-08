@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_Date",
+    "sourceTable" : "physicalTable:SemanticModelDBDemo.OD_HR.DIMDATE",
+    "overrideSourceCacheSetting" : false
+  }
+}

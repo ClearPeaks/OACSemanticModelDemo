@@ -1,0 +1,23 @@
+{
+  "subjectArea" : {
+    "name" : "SemanticModelPresentation",
+    "sourceBusinessModel" : "businessModel:SemanticBusinessModel",
+    "tableOrder" : [ {
+      "name" : "presentationTable:SemanticModelPresentation.Dim_Date"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.Dim_Grade"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.Dim_Generation"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.Dim_Location"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.Dim_Job_Info"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.Dim_Org_Unit"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.Fact HR"
+    }, {
+      "name" : "presentationTable:SemanticModelPresentation.W_PERFORMANCE_RATING_D"
+    } ]
+  }
+}

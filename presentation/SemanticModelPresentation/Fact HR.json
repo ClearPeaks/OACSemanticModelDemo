@@ -1,0 +1,72 @@
+{
+  "presentationTable" : {
+    "name" : "Fact HR",
+    "presentationColumns" : [ {
+      "name" : "YEARMONTH",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.YEARMONTH"
+    }, {
+      "name" : "GENERATION_DESC_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.GENERATION_DESC_TX"
+    }, {
+      "name" : "PERFORMANCE_RATING_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.PERFORMANCE_RATING_TX"
+    }, {
+      "name" : "SITE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.SITE_NAME_TX"
+    }, {
+      "name" : "ORG_UNIT_DESC_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.ORG_UNIT_DESC_TX"
+    }, {
+      "name" : "JOB_FAMILY_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.JOB_FAMILY_TX"
+    }, {
+      "name" : "GRADE_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.GRADE_TX"
+    }, {
+      "name" : "JOB_TITLE_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.JOB_TITLE_TX"
+    }, {
+      "name" : "JOB_CODE_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.JOB_CODE_TX"
+    }, {
+      "name" : "HEADCOUNT_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.HEADCOUNT_NR"
+    }, {
+      "name" : "BASE_SALARY_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.BASE_SALARY_NR"
+    }, {
+      "name" : "JOINERS_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.JOINERS_NR"
+    }, {
+      "name" : "LEAVERS_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.LEAVERS_NR"
+    }, {
+      "name" : "JOB_REQ_OPEN_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.JOB_REQ_OPEN_NR"
+    }, {
+      "name" : "JOB_REQ_CLOSED_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.JOB_REQ_CLOSED_NR"
+    }, {
+      "name" : "APPLICATIONS_OPEN_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.APPLICATIONS_OPEN_NR"
+    }, {
+      "name" : "APPLICATIONS_CLOSED_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.APPLICATIONS_CLOSED_NR"
+    }, {
+      "name" : "BONUS_PAYMENT_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.BONUS_PAYMENT_NR"
+    }, {
+      "name" : "ACTIVE_JOB_REQ_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.ACTIVE_JOB_REQ_NR"
+    }, {
+      "name" : "ENGAGEMENT_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.ENGAGEMENT_NR"
+    }, {
+      "name" : "RESPONDENTS_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.RESPONDENTS_NR"
+    }, {
+      "name" : "WPS_SCORE_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Fact HR.WPS_SCORE_NR"
+    } ]
+  }
+}

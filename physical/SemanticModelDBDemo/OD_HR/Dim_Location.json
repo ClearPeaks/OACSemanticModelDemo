@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_Location",
+    "sourceTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_LOCATION_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

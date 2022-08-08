@@ -1,0 +1,161 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Job_Info",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "JOB_CODE" ],
+    "logicalColumns" : [ {
+      "name" : "ROW_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "JOB_CODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.JOB_CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "JOB_TITLE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.JOB_TITLE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "JOB_FAMILY_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.JOB_FAMILY_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "JOB_GRADE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.JOB_GRADE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "MIN_SALARY_NR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.MIN_SALARY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "MAX_SALARY_NR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.MAX_SALARY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    }, {
+      "name" : "TARGET_SALARY_NR",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Job_Info",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SemanticModelDBDemo.OD_HR.Dim_Job_Info.TARGET_SALARY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Job_Info Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Job_Info",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SemanticModelDBDemo.OD_HR.Dim_Job_Info" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Job_Info Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Job_Info Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Job_Info Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "JOB_CODE" ],
+        "displayKey" : "JOB_CODE"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "H1",
+        "levels" : [ "Dim_Job_Info Total", "Dim_Job_Info Detail" ]
+      } ]
+    }
+  }
+}

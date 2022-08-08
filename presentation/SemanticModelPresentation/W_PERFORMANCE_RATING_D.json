@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "W_PERFORMANCE_RATING_D",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.W_PERFORMANCE_RATING_D.ROW_WID"
+    }, {
+      "name" : "PERFORMANCE_RATING_TX",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.W_PERFORMANCE_RATING_D.PERFORMANCE_RATING_TX"
+    }, {
+      "name" : "PERFORMANCE_SCORE_NR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.W_PERFORMANCE_RATING_D.PERFORMANCE_SCORE_NR"
+    }, {
+      "name" : "BENCHMARK (% EMPLOYEES)",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.W_PERFORMANCE_RATING_D.BENCHMARK (% EMPLOYEES)"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:SemanticBusinessModel.W_PERFORMANCE_RATING_D",
+      "levels" : [ {
+        "name" : "Dim_Performance_Rating Total",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.W_PERFORMANCE_RATING_D.Dim_Performance_Rating Total"
+      }, {
+        "name" : "Dim_Performance_Rating Detail",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.W_PERFORMANCE_RATING_D.Dim_Performance_Rating Detail",
+        "displayColumn" : "presentationColumn:SemanticModelPresentation.W_PERFORMANCE_RATING_D.PERFORMANCE_RATING_TX"
+      } ]
+    } ]
+  }
+}

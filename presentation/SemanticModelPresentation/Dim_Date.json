@@ -1,0 +1,69 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Date",
+    "presentationColumns" : [ {
+      "name" : "DATENUM",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DATENUM"
+    }, {
+      "name" : "DATE_",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DATE_"
+    }, {
+      "name" : "YEARMONTHNUM",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.YEARMONTHNUM"
+    }, {
+      "name" : "CALENDAR_QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.CALENDAR_QUARTER"
+    }, {
+      "name" : "MONTHNUM",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.MONTHNUM"
+    }, {
+      "name" : "MONTHNAME",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.MONTHNAME"
+    }, {
+      "name" : "MONTHSHORTNAME",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.MONTHSHORTNAME"
+    }, {
+      "name" : "WEEKNUM",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.WEEKNUM"
+    }, {
+      "name" : "DAYNUMOFYEAR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DAYNUMOFYEAR"
+    }, {
+      "name" : "DAYNUMOFMONTH",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DAYNUMOFMONTH"
+    }, {
+      "name" : "DAYNUMOFWEEK",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DAYNUMOFWEEK"
+    }, {
+      "name" : "DAYNAME",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DAYNAME"
+    }, {
+      "name" : "DAYSHORTNAME",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DAYSHORTNAME"
+    }, {
+      "name" : "QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.QUARTER"
+    }, {
+      "name" : "YEARQUARTERNUM",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.YEARQUARTERNUM"
+    }, {
+      "name" : "DAYNUMOFQUARTER",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.DAYNUMOFQUARTER"
+    }, {
+      "name" : "YEAR",
+      "sourceLogicalColumn" : "logicalColumn:SemanticBusinessModel.Dim_Date.YEAR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:SemanticBusinessModel.Dim_Date",
+      "levels" : [ {
+        "name" : "Dim Date Total",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Date.Dim Date Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SemanticBusinessModel.Dim_Date.Detail",
+        "displayColumn" : "presentationColumn:SemanticModelPresentation.Dim_Date.DATENUM"
+      } ]
+    } ]
+  }
+}

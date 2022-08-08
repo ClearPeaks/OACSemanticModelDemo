@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_Org_Unit",
+    "sourceTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_ORG_UNITS_D",
+    "overrideSourceCacheSetting" : false
+  }
+}
