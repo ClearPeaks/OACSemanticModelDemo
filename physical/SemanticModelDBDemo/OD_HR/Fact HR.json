@@ -57,15 +57,6 @@
       } ],
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE"
-    }, {
-      "rightTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_PERFORMANCE_RATING_D",
-      "useJoinExpression" : false,
-      "joinConditions" : [ {
-        "leftColumn" : "physicalColumn:SemanticModelDBDemo.OD_HR.Fact HR.PERFORMANCE_RATING_TX",
-        "rightColumn" : "physicalColumn:SemanticModelDBDemo.OD_HR.W_PERFORMANCE_RATING_D.PERFORMANCE_RATING_TX"
-      } ],
-      "joinType" : "INNER",
-      "cardinality" : "MANY_TO_ONE"
     } ]
   }
 }
