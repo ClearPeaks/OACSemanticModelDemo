@@ -48,15 +48,6 @@
       } ],
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE"
-    }, {
-      "rightTable" : "physicalTable:SemanticModelDBDemo.OD_HR.W_ORG_UNITS_D",
-      "useJoinExpression" : false,
-      "joinConditions" : [ {
-        "leftColumn" : "physicalColumn:SemanticModelDBDemo.OD_HR.Fact HR.ORG_UNIT_DESC_TX",
-        "rightColumn" : "physicalColumn:SemanticModelDBDemo.OD_HR.W_ORG_UNITS_D.ORG_UNIT_DESC_TX"
-      } ],
-      "joinType" : "INNER",
-      "cardinality" : "MANY_TO_ONE"
     } ]
   }
 }
